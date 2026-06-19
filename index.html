@@ -1,51 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plasma Compendium</title>
 
 <style>
-body {
-    font-family: Arial;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-h1 {
-    color: #333;
+body{
+    font-family: Arial, sans-serif;
+    display:flex;
+    background:#f4f6f9;
+    color:#333;
 }
 
-.section {
-    margin-top: 30px;
+.sidebar{
+    width:260px;
+    height:100vh;
+    position:fixed;
+    background:#1e3a5f;
+    padding:30px 20px;
+    overflow-y:auto;
+}
+
+.sidebar h1{
+    color:white;
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:#dbe7f5;
+    text-decoration:none;
+    padding:10px 0;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    color:white;
+    padding-left:8px;
+}
+
+.content{
+    margin-left:260px;
+    padding:40px;
+    width:100%;
+}
+
+section{
+    margin-bottom:80px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+h2{
+    color:#1e3a5f;
+    margin-bottom:15px;
+}
+
+.hero{
+    background:linear-gradient(135deg,#1e3a5f,#4f8cff);
+    color:white;
+}
+
+.hero h2{
+    color:white;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+p{
+    line-height:1.6;
 }
 </style>
-
 </head>
 
 <body>
 
-<h1>Plasma Compendium</h1>
+<div class="sidebar">
+    <h1>Plasma Compendium</h1>
 
-<p>
-Academic notes and resources on plasma physics,
-thin films and materials science.
-</p>
-
-<div class="section">
-<h2>About</h2>
-<p>
-This website contains my scientific notes,
-summaries and learning materials.
-</p>
+    <a href="#home">Home</a>
+    <a href="#atomic">Atomic Physics Basics</a>
+    <a href="#plasma">What is Plasma?</a>
+    <a href="#parameters">Plasma Parameters</a>
+    <a href="#confinement">Plasma Confinement</a>
+    <a href="#diagnostics">Plasma Diagnostics</a>
+    <a href="#research">Current Research Challenges</a>
 </div>
 
-<div class="section">
-<h2>Topics</h2>
-<ul>
-<li>Plasma physics</li>
-<li>Thin films</li>
-<li>Condensed matter physics</li>
-</ul>
+<div class="content">
+
+<section id="home" class="hero">
+    <h2>Welcome</h2>
+    <p>
+        Plasma Compendium is an educational resource dedicated to plasma physics.
+        The goal of this website is to provide concise explanations of key concepts,
+        from atomic physics foundations to modern fusion research challenges.
+    </p>
+</section>
+
+<section id="atomic">
+    <h2>Atomic Physics Basics</h2>
+    <p>
+        This section introduces atomic structure, quantum numbers, electron transitions,
+        photon interactions, and the concepts needed to understand plasma physics.
+    </p>
+</section>
+
+<section id="plasma">
+    <h2>What is Plasma?</h2>
+    <p>
+        Plasma is often called the fourth state of matter. It consists of free electrons
+        and ions and exhibits collective electromagnetic behavior.
+    </p>
+</section>
+
+<section id="parameters">
+    <h2>Plasma Parameters</h2>
+    <p>
+        Important plasma parameters include density, temperature, Debye length,
+        plasma frequency, and collision rates.
+    </p>
+</section>
+
+<section id="confinement">
+    <h2>Plasma Confinement</h2>
+    <p>
+        Plasma can be confined using magnetic or inertial methods.
+        Examples include tokamaks, stellarators, and laser-driven fusion systems.
+    </p>
+</section>
+
+<section id="diagnostics">
+    <h2>Plasma Diagnostics</h2>
+    <p>
+        Diagnostics are techniques used to measure plasma properties,
+        including Langmuir probes, spectroscopy, interferometry,
+        and Thomson scattering.
+    </p>
+</section>
+
+<section id="research">
+    <h2>Current Research Challenges</h2>
+    <p>
+        Modern plasma research focuses on fusion energy,
+        turbulence, plasma-wall interactions,
+        advanced diagnostics, and high-performance simulations.
+    </p>
+</section>
+
 </div>
 
 </body>
