@@ -14,13 +14,15 @@ body{
 
 
 
-/* меню */
+/* MENU */
 
 .sidebar{
 
     width:260px;
     height:100vh;
     position:fixed;
+    top:0;
+    left:0;
     background:#1e3a5f;
     padding:30px 20px;
 
@@ -55,7 +57,7 @@ body{
 
 
 
-/* все страницы */
+/* CONTENT */
 
 .content{
 
@@ -71,7 +73,7 @@ body{
 
 
 
-/* главная страница */
+/* HOME PAGE */
 
 body:has(.sidebar) .content{
 
@@ -92,7 +94,6 @@ h1{
 }
 
 
-
 h2{
 
     color:#24527a;
@@ -101,13 +102,11 @@ h2{
 }
 
 
-
 h3{
 
     color:#24527a;
 
 }
-
 
 
 p{
@@ -119,7 +118,7 @@ p{
 
 
 
-/* формулы */
+/* FORMULAS */
 
 .formula{
 
@@ -132,7 +131,7 @@ p{
 
 
 
-/* картинки */
+/* IMAGES */
 
 img{
 
@@ -144,7 +143,7 @@ img{
 }
 
 
-.plasma-image {
+.plasma-image{
 
     display:block;
     max-width:80%;
@@ -154,17 +153,8 @@ img{
 }
 
 
-.figure{
 
-    text-align:center;
-    color:#666;
-    font-style:italic;
-
-}
-
-
-
-.figure-caption {
+.figure-caption{
 
     text-align:center;
     font-style:italic;
@@ -175,8 +165,7 @@ img{
 
 
 
-
-/* главная Welcome */
+/* WELCOME BLOCK */
 
 .hero{
 
@@ -197,8 +186,7 @@ img{
 
 
 
-
-/* кнопка назад */
+/* BACK BUTTON */
 
 .back-button{
 
@@ -208,7 +196,6 @@ img{
     text-decoration:none;
 
 }
-
 
 
 .back-button:hover{
@@ -221,91 +208,89 @@ img{
 
 
 
-/* ТЕЛЕФОН */
+/* MOBILE */
 
 @media (max-width:700px){
 
 
-.sidebar{
+    .sidebar{
 
-    width:100%;
-    height:auto;
-    position:relative;
-    padding:20px;
+        width:100%;
+        height:auto;
+        position:relative;
+        top:auto;
+        left:auto;
+        padding:20px;
 
-}
-
-
-
-.sidebar h1{
-
-    font-size:22px;
-
-}
+    }
 
 
+    .sidebar h1{
 
-.sidebar a{
+        font-size:22px;
 
-    display:block;
-    margin:8px 0;
-
-}
+    }
 
 
 
+    .sidebar a{
 
+        padding:8px 0;
 
-.content,
-body:has(.sidebar) .content{
-
-    width:100%;
-    max-width:100%;
-    margin:0;
-    padding:20px;
-
-}
+    }
 
 
 
-.hero{
 
-    padding:25px;
+    .content,
+    body:has(.sidebar) .content{
 
-}
+        width:100%;
+        max-width:100%;
+        margin:0;
+        padding:20px;
 
-
-
-h1{
-
-    font-size:26px;
-
-}
+    }
 
 
 
-h2{
+    .hero{
 
-    font-size:22px;
+        padding:25px;
 
-}
-
-
-
-p{
-
-    font-size:16px;
-    line-height:1.6;
-
-}
+    }
 
 
 
-.plasma-image{
+    h1{
 
-    max-width:100%;
+        font-size:26px;
 
-}
+    }
 
+
+
+    h2{
+
+        font-size:22px;
+
+    }
+
+
+
+    p{
+
+        font-size:16px;
+        line-height:1.6;
+
+    }
+
+
+
+    .plasma-image{
+
+        max-width:100%;
+
+    }
 
 }
