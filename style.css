@@ -155,6 +155,19 @@ img{
 
 }
 
+.plasma-image {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 30px auto;
+}
+
+
+.figure-caption {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+}
 
 .hero h2{
 
