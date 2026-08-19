@@ -1,0 +1,767 @@
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Charged Particle Motion in Magnetic Fields</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<a href="index.html" class="back-button">
+
+← Back to Home
+
+</a>
+
+
+<div class="content">
+
+<h1>Charged Particle Motion in Magnetic Fields</h1>
+
+
+<h2>Introduction</h2>
+
+<p>
+
+The motion of charged particles in electromagnetic fields is one of the
+fundamental topics in plasma physics. Since a plasma consists of charged
+particles, its behaviour is strongly influenced by electric and magnetic
+fields.
+
+</p>
+
+<p>
+
+Understanding the motion of a single charged particle provides an important
+foundation for understanding collective plasma behaviour and magnetic
+confinement. In devices such as tokamaks and stellarators, magnetic fields are
+used to control the motion of charged particles and reduce their losses from
+the confined plasma.
+
+</p>
+
+<p>
+
+The simplest important case is the motion of a charged particle in a uniform
+magnetic field. This problem leads to several fundamental concepts, including
+cyclotron motion, the Larmor radius, helical trajectories, and the guiding
+center approximation.
+
+</p>
+
+
+<h2>The Lorentz Force</h2>
+
+<p>
+
+The motion of a charged particle in an electromagnetic field is governed by
+the Lorentz force:
+
+</p>
+
+<p class="formula">
+
+F⃗ = q(E⃗ + v⃗ × B⃗)
+
+</p>
+
+<p>
+
+where q is the particle charge, E⃗ is the electric field, v⃗ is the particle
+velocity, and B⃗ is the magnetic field.
+
+</p>
+
+<p>
+
+The Lorentz force consists of two contributions. The electric force is
+
+</p>
+
+<p class="formula">
+
+F⃗<sub>E</sub> = qE⃗
+
+</p>
+
+<p>
+
+while the magnetic force is
+
+</p>
+
+<p class="formula">
+
+F⃗<sub>B</sub> = q(v⃗ × B⃗)
+
+</p>
+
+<p>
+
+The electric force acts along the electric field and can change the kinetic
+energy of the particle. The magnetic force, however, is perpendicular to both
+the particle velocity and the magnetic field.
+
+</p>
+
+<p>
+
+Therefore,
+
+</p>
+
+<p class="formula">
+
+F⃗<sub>B</sub> · v⃗ = 0
+
+</p>
+
+<p>
+
+and the magnetic field does no work on the particle. A static magnetic field
+can therefore change the direction of a particle's velocity without changing
+its kinetic energy.
+
+</p>
+
+
+<h2>Motion in a Uniform Magnetic Field</h2>
+
+<p>
+
+Consider a charged particle moving in a uniform and time-independent magnetic
+field, with no electric field:
+
+</p>
+
+<p class="formula">
+
+E⃗ = 0, &nbsp;&nbsp; B⃗ = constant
+
+</p>
+
+<p>
+
+The equation of motion becomes
+
+</p>
+
+<p class="formula">
+
+m dv⃗/dt = q(v⃗ × B⃗)
+
+</p>
+
+<p>
+
+It is useful to decompose the particle velocity into two components: one
+parallel to the magnetic field and one perpendicular to it.
+
+</p>
+
+<p class="formula">
+
+v⃗ = v⃗<sub>∥</sub> + v⃗<sub>⊥</sub>
+
+</p>
+
+<p>
+
+The parallel component is unaffected by the magnetic force because it is
+parallel to B⃗:
+
+</p>
+
+<p class="formula">
+
+v⃗<sub>∥</sub> × B⃗ = 0
+
+</p>
+
+<p>
+
+The perpendicular component, on the other hand, experiences a magnetic force.
+This force is always perpendicular to the instantaneous velocity and changes
+its direction continuously.
+
+</p>
+
+<p>
+
+As a result, the particle moves freely along the magnetic field while
+simultaneously undergoing circular motion in the plane perpendicular to the
+field.
+
+</p>
+
+
+<h2>Cyclotron Motion</h2>
+
+<p>
+
+Consider the special case in which the particle velocity is entirely
+perpendicular to the magnetic field:
+
+</p>
+
+<p class="formula">
+
+v⃗ = v⃗<sub>⊥</sub>
+
+</p>
+
+<p>
+
+The magnetic force then acts as the centripetal force required for circular
+motion:
+
+</p>
+
+<p class="formula">
+
+|q|v<sub>⊥</sub>B = mv<sub>⊥</sub><sup>2</sup>/r<sub>L</sub>
+
+</p>
+
+<p>
+
+Solving for the orbit radius gives
+
+</p>
+
+<p class="formula">
+
+r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+
+</p>
+
+<p>
+
+This radius is called the <strong>Larmor radius</strong> or
+<strong>gyroradius</strong>. It characterizes the size of the particle's
+circular orbit around the magnetic field line.
+
+</p>
+
+<p>
+
+The angular frequency of the circular motion is
+
+</p>
+
+<p class="formula">
+
+ω<sub>c</sub> = v<sub>⊥</sub> / r<sub>L</sub>
+
+</p>
+
+<p>
+
+Substituting the expression for the Larmor radius gives the
+<strong>cyclotron frequency</strong>:
+
+</p>
+
+<p class="formula">
+
+ω<sub>c</sub> = |q|B / m
+
+</p>
+
+<p>
+
+The corresponding cyclotron frequency in hertz is
+
+</p>
+
+<p class="formula">
+
+f<sub>c</sub> = |q|B / 2πm
+
+</p>
+
+<p>
+
+The cyclotron frequency depends on the particle charge, mass, and magnetic
+field strength. For a given magnetic field, electrons gyrate much faster than
+ions because their mass is much smaller.
+
+</p>
+
+
+<h2>Larmor Radius</h2>
+
+<p>
+
+The Larmor radius is one of the most important characteristic scales in
+magnetized plasma physics:
+
+</p>
+
+<p class="formula">
+
+r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+
+</p>
+
+<p>
+
+The equation shows that the orbit becomes smaller when the magnetic field
+strength increases. It also becomes smaller for particles with a larger
+charge-to-mass ratio.
+
+</p>
+
+<p>
+
+For a strongly magnetized plasma, the Larmor radius is much smaller than the
+characteristic spatial scale of the system:
+
+</p>
+
+<p class="formula">
+
+r<sub>L</sub> ≪ L
+
+</p>
+
+<p>
+
+where L is a characteristic length scale of the magnetic field or plasma.
+
+</p>
+
+<p>
+
+This condition is particularly important for magnetic confinement. When the
+Larmor radius is small compared with the size of the confinement device,
+particles undergo many gyromotions before experiencing significant changes in
+the macroscopic magnetic field.
+
+</p>
+
+
+<h2>Helical Motion</h2>
+
+<p>
+
+In the general case, a charged particle has both parallel and perpendicular
+velocity components:
+
+</p>
+
+<p class="formula">
+
+v⃗ = v⃗<sub>∥</sub> + v⃗<sub>⊥</sub>
+
+</p>
+
+<p>
+
+The perpendicular component produces circular motion around the magnetic field
+line, while the parallel component produces uniform motion along the field
+line.
+
+</p>
+
+<p>
+
+The resulting trajectory is therefore a helix.
+
+</p>
+
+<p class="formula">
+
+Helical motion = gyromotion + parallel motion
+
+</p>
+
+<p>
+
+The pitch of the helical trajectory is the distance travelled along the
+magnetic field during one complete gyroperiod:
+
+</p>
+
+<p class="formula">
+
+T<sub>c</sub> = 2π / ω<sub>c</sub>
+
+</p>
+
+<p class="formula">
+
+p = v<sub>∥</sub>T<sub>c</sub>
+
+</p>
+
+<p>
+
+or, equivalently,
+
+</p>
+
+<p class="formula">
+
+p = 2πv<sub>∥</sub> / ω<sub>c</sub>
+
+</p>
+
+<p>
+
+If v<sub>∥</sub> = 0, the trajectory becomes a circle. If
+v<sub>⊥</sub> = 0, the particle moves along the magnetic field line without
+gyration.
+
+</p>
+
+
+<h2>Direction of Gyromotion</h2>
+
+<p>
+
+The direction of gyromotion depends on the sign of the particle charge.
+Positive and negative particles rotate in opposite directions around the same
+magnetic field.
+
+</p>
+
+<p>
+
+This difference is particularly important in a plasma containing both
+electrons and ions. Although both species are affected by the same magnetic
+field, their opposite charges cause them to gyrate in opposite directions.
+
+</p>
+
+<p>
+
+Their masses also differ by several orders of magnitude. Consequently,
+electrons have a much higher cyclotron frequency and, for comparable
+perpendicular velocities, a much smaller Larmor radius than ions.
+
+</p>
+
+
+<h2>The Guiding Center</h2>
+
+<p>
+
+The cyclotron motion of a charged particle is usually much faster than the
+slower motion of the center of its orbit. Instead of following the complete
+circular trajectory, it is therefore useful to introduce the concept of the
+<strong>guiding center</strong>.
+
+</p>
+
+<p>
+
+The guiding center represents the instantaneous center of the particle's
+gyromotion. In a perfectly uniform magnetic field, the guiding center follows
+the magnetic field line while the particle gyrates around it.
+
+</p>
+
+<p>
+
+This provides a useful separation between two types of motion:
+
+</p>
+
+<ul>
+
+<li>
+Fast gyromotion around the magnetic field line.
+</li>
+
+<li>
+Slower motion of the guiding center.
+</li>
+
+</ul>
+
+<p>
+
+In a real plasma, magnetic fields are rarely perfectly uniform. They can have
+spatial gradients, curvature, and electric fields. Under these conditions,
+the guiding center itself can move across magnetic field lines.
+
+</p>
+
+<p>
+
+This slower motion is known as <strong>particle drift</strong> and becomes
+particularly important in magnetic confinement devices.
+
+</p>
+
+
+<h2>Magnetic Moment</h2>
+
+<p>
+
+For a charged particle undergoing gyromotion in a slowly varying magnetic
+field, another useful quantity is the magnetic moment:
+
+</p>
+
+<p class="formula">
+
+μ = mv<sub>⊥</sub><sup>2</sup> / 2B
+
+</p>
+
+<p>
+
+Under appropriate adiabatic conditions, this quantity is approximately
+conserved. This means that changes in the magnetic field can influence the
+particle's perpendicular and parallel motion.
+
+</p>
+
+<p>
+
+The magnetic moment provides a connection between the microscopic motion of
+individual particles and macroscopic effects such as magnetic mirroring and
+particle trapping.
+
+</p>
+
+
+<h2>Magnetic Mirror Effect</h2>
+
+<p>
+
+Consider a particle moving through a magnetic field whose strength gradually
+increases. If the magnetic moment remains approximately constant, an increase
+in B must be accompanied by a corresponding change in the perpendicular
+kinetic energy.
+
+</p>
+
+<p>
+
+Since the total kinetic energy remains constant in a static magnetic field,
+the parallel velocity can decrease as the perpendicular velocity increases.
+
+</p>
+
+<p>
+
+Eventually, the parallel velocity can become zero. The particle then reverses
+its direction and moves back toward the region of weaker magnetic field.
+
+</p>
+
+<p>
+
+This phenomenon is known as the <strong>magnetic mirror effect</strong>.
+
+</p>
+
+<p class="formula">
+
+μ = mv<sub>⊥</sub><sup>2</sup> / 2B ≈ constant
+
+</p>
+
+<p>
+
+The magnetic mirror effect is one of the basic principles behind magnetic
+mirror confinement and also plays an important role in understanding particle
+trapping in non-uniform magnetic fields.
+
+</p>
+
+
+<h2>Charged Particle Motion and Magnetic Confinement</h2>
+
+<p>
+
+The motion described above provides the microscopic basis for magnetic
+confinement.
+
+</p>
+
+<p>
+
+A strong magnetic field causes charged particles to gyrate around magnetic
+field lines with a characteristic Larmor radius. If this radius is much
+smaller than the dimensions of the plasma, the particle is strongly
+magnetized.
+
+</p>
+
+<p>
+
+However, a magnetic field does not simply force particles to remain exactly
+on a single field line. In realistic magnetic confinement systems, the field
+has curvature and spatial gradients, and electric fields may also be present.
+
+</p>
+
+<p>
+
+These effects cause the guiding centers of particles to move across magnetic
+field lines. Understanding these motions is therefore essential for
+understanding particle losses, plasma transport, and confinement quality.
+
+</p>
+
+<p>
+
+This leads naturally to the next important topic in magnetized plasma physics:
+<strong>particle drifts</strong>.
+
+</p>
+
+
+<h2>Key Equations</h2>
+
+<p>
+
+The most important equations from this chapter are summarized below.
+
+</p>
+
+<p class="formula">
+
+F⃗ = q(E⃗ + v⃗ × B⃗)
+
+</p>
+
+<p class="formula">
+
+r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+
+</p>
+
+<p class="formula">
+
+ω<sub>c</sub> = |q|B / m
+
+</p>
+
+<p class="formula">
+
+f<sub>c</sub> = |q|B / 2πm
+
+</p>
+
+<p class="formula">
+
+T<sub>c</sub> = 2π / ω<sub>c</sub>
+
+</p>
+
+<p class="formula">
+
+p = 2πv<sub>∥</sub> / ω<sub>c</sub>
+
+</p>
+
+<p class="formula">
+
+μ = mv<sub>⊥</sub><sup>2</sup> / 2B
+
+</p>
+
+<p class="formula">
+
+r<sub>L</sub> ≪ L
+
+</p>
+
+
+<h2>Summary</h2>
+
+<ul>
+
+<li>
+The motion of a charged particle in electromagnetic fields is governed by the
+Lorentz force.
+</li>
+
+<li>
+A magnetic field changes the direction of particle motion but does not perform
+work on the particle.
+</li>
+
+<li>
+The velocity can be decomposed into components parallel and perpendicular to
+the magnetic field.
+</li>
+
+<li>
+The perpendicular component produces cyclotron motion around the magnetic
+field line.
+</li>
+
+<li>
+The characteristic radius of this motion is the Larmor radius.
+</li>
+
+<li>
+The characteristic angular frequency is the cyclotron frequency.
+</li>
+
+<li>
+The combination of gyromotion and parallel motion produces a helical
+trajectory.
+</li>
+
+<li>
+The guiding center describes the slower motion of the center of the
+gyro-orbit.
+</li>
+
+<li>
+In non-uniform electromagnetic fields, the guiding center can drift across
+magnetic field lines.
+</li>
+
+<li>
+These effects form the microscopic foundation for understanding magnetic
+confinement and plasma transport.
+</li>
+
+</ul>
+
+
+<h2>Connection to the Next Topic</h2>
+
+<p>
+
+The idealized motion in a uniform magnetic field is only the beginning. Real
+magnetic confinement systems contain curved and non-uniform magnetic fields.
+These variations produce additional motions of the guiding center known as
+<strong>particle drifts</strong>.
+
+</p>
+
+<p>
+
+The next step is therefore to study how electric fields, magnetic-field
+gradients, and magnetic-field curvature influence the motion of charged
+particles in magnetized plasmas.
+
+</p>
+
+
+</div>
+
+</body>
+
+</html>
+```
