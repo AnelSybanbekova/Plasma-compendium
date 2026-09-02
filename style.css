@@ -1,3 +1,4 @@
+```css
 *{
     margin:0;
     padding:0;
@@ -25,6 +26,9 @@ body{
     left:0;
     background:#1e3a5f;
     padding:30px 20px;
+
+    /* Allows the menu to scroll */
+    overflow-y:auto;
 
 }
 
@@ -56,7 +60,6 @@ body{
 
 
 
-
 /* CONTENT */
 
 .content{
@@ -72,7 +75,6 @@ body{
 
 
 
-
 /* HOME PAGE */
 
 body:has(.sidebar) .content{
@@ -85,7 +87,7 @@ body:has(.sidebar) .content{
 
 
 
-
+/* HEADINGS */
 
 h1{
 
@@ -117,7 +119,6 @@ p{
 
 
 
-
 /* FORMULAS */
 
 .formula{
@@ -127,7 +128,6 @@ p{
     margin:20px;
 
 }
-
 
 
 
@@ -153,7 +153,6 @@ img{
 }
 
 
-
 .figure-caption{
 
     text-align:center;
@@ -161,7 +160,6 @@ img{
     margin-bottom:40px;
 
 }
-
 
 
 
@@ -185,8 +183,7 @@ img{
 
 
 
-
-/* BACK BUTTON */
+/* BACK / NAVIGATION BUTTONS */
 
 .back-button{
 
@@ -206,12 +203,9 @@ img{
 
 
 
-
-
 /* MOBILE */
 
 @media (max-width:700px){
-
 
     .sidebar{
 
@@ -221,6 +215,9 @@ img{
         top:auto;
         left:auto;
         padding:20px;
+
+        /* No fixed scrolling menu on mobile */
+        overflow-y:visible;
 
     }
 
@@ -232,14 +229,11 @@ img{
     }
 
 
-
     .sidebar a{
 
         padding:8px 0;
 
     }
-
-
 
 
     .content,
@@ -253,13 +247,11 @@ img{
     }
 
 
-
     .hero{
 
         padding:25px;
 
     }
-
 
 
     h1{
@@ -269,13 +261,11 @@ img{
     }
 
 
-
     h2{
 
         font-size:22px;
 
     }
-
 
 
     p{
@@ -286,7 +276,6 @@ img{
     }
 
 
-
     .plasma-image{
 
         max-width:100%;
@@ -294,3 +283,4 @@ img{
     }
 
 }
+```
