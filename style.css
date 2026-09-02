@@ -19,23 +19,44 @@ body{
 .sidebar{
 
     width:260px;
-    height:100vh;
 
     position:fixed;
     top:0;
     left:0;
+    bottom:0;
 
     background:#1e3a5f;
 
     padding:30px 20px;
 
     /* Allows the menu to scroll */
-    overflow-y:auto;
+    overflow-y:scroll;
     overflow-x:hidden;
 
-    /* Makes sure the entire menu can be reached */
-    scrollbar-width:auto;
+}
 
+
+/* Sidebar scrollbar */
+
+.sidebar::-webkit-scrollbar{
+    width:8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#8aa9c7;
+    border-radius:10px;
+}
+
+.sidebar::-webkit-scrollbar-track{
+    background:#1e3a5f;
+}
+
+
+/* Firefox scrollbar */
+
+.sidebar{
+    scrollbar-width:thin;
+    scrollbar-color:#8aa9c7 #1e3a5f;
 }
 
 
@@ -188,7 +209,6 @@ img{
 
 
 /* WELCOME BLOCK */
-/* Used only for special welcome/hero sections */
 
 .hero{
 
@@ -246,10 +266,10 @@ img{
 
         top:auto;
         left:auto;
+        bottom:auto;
 
         padding:20px;
 
-        /* No fixed scrolling menu on mobile */
         overflow-y:visible;
 
     }
@@ -321,3 +341,4 @@ img{
 
 }
 ```
+
