@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plasma Equilibrium and Stability</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="content">
+
+
+<a href="index.html" class="back-button">
+← Back to Home
+</a>
+
+
+<h1>Plasma Equilibrium and Stability</h1>
+
+
+<h2>Introduction</h2>
+
+<p>
+Magnetic confinement provides a way to keep a hot plasma away from material
+surfaces, but confinement alone is not sufficient. A plasma is a dynamic
+electromagnetic system containing charged particles, electric currents,
+pressure gradients, and magnetic fields.
+</p>
+
+<p>
+For a confined plasma to remain in a controlled state, these forces must be
+balanced. This condition is known as <strong>plasma equilibrium</strong>.
+</p>
+
+<p>
+However, an equilibrium does not necessarily mean that the plasma will remain
+stable. Small perturbations can grow and distort the plasma, potentially
+leading to increased particle and energy losses or even a complete loss of
+confinement.
+</p>
+
+<p>
+This chapter introduces the basic physics of plasma equilibrium and the main
+types of instabilities encountered in magnetically confined plasmas.
+</p>
+
+
+<h2>1. What Is Plasma Equilibrium?</h2>
+
+<p>
+An equilibrium is a state in which the macroscopic forces acting on the plasma
+are balanced.
+</p>
+
+<p>
+For a magnetized plasma, an important competition exists between the plasma
+pressure and the magnetic forces that confine it.
+</p>
+
+<p>
+In a simplified magnetohydrodynamic description, the equilibrium condition can
+be written as
+</p>
+
+<div class="formula">
+J × B = ∇p
+</div>
+
+<p>
+where
+</p>
+
+<ul>
+
+<li>
+<strong>J</strong> is the plasma current density,
+</li>
+
+<li>
+<strong>B</strong> is the magnetic field,
+</li>
+
+<li>
+<strong>p</strong> is the plasma pressure.
+</li>
+
+</ul>
+
+<p>
+This equation expresses a fundamental idea: the magnetic force must balance
+the pressure gradient inside the plasma.
+</p>
+
+<p>
+If the plasma pressure is higher in one region than another, the resulting
+pressure gradient tends to push the plasma outward. The magnetic field must
+provide a force capable of balancing this tendency.
+</p>
+
+
+<h2>2. Plasma Pressure</h2>
+
+<p>
+Plasma pressure arises from the thermal motion of charged particles.
+For a simple isotropic plasma, the total pressure can be approximated as
+</p>
+
+<div class="formula">
+p = n<sub>e</sub>kT<sub>e</sub> + n<sub>i</sub>kT<sub>i</sub>
+</div>
+
+<p>
+where
+</p>
+
+<ul>
+
+<li>
+n<sub>e</sub> is the electron density,
+</li>
+
+<li>
+n<sub>i</sub> is the ion density,
+</li>
+
+<li>
+T<sub>e</sub> is the electron temperature,
+</li>
+
+<li>
+T<sub>i</sub> is the ion temperature,
+</li>
+
+<li>
+k is the Boltzmann constant.
+</li>
+
+</ul>
+
+<p>
+For a quasi-neutral plasma,
+</p>
+
+<div class="formula">
+n<sub>e</sub> ≈ n<sub>i</sub>
+</div>
+
+<p>
+and for comparable electron and ion temperatures, the pressure can become
+very large.
+</p>
+
+<p>
+In fusion plasmas, temperatures can reach tens or hundreds of millions of
+kelvin. Consequently, maintaining equilibrium requires strong magnetic
+fields and carefully controlled plasma conditions.
+</p>
+
+
+<h2>3. Magnetic Pressure</h2>
+
+<p>
+A magnetic field itself carries energy and can exert an effective pressure on
+the plasma.
+</p>
+
+<p>
+The magnetic pressure is
+</p>
+
+<div class="formula">
+p<sub>B</sub> = B<sup>2</sup> / 2μ<sub>0</sub>
+</div>
+
+<p>
+where μ<sub>0</sub> is the permeability of free space.
+</p>
+
+<p>
+A stronger magnetic field therefore provides a larger magnetic pressure.
+This is one of the fundamental reasons why strong magnetic fields are
+required for fusion confinement.
+</p>
+
+<p>
+The competition between plasma pressure and magnetic pressure leads to one
+of the most important dimensionless parameters in fusion plasma physics:
+<strong>plasma beta</strong>.
+</p>
+
+
+<h2>4. Plasma Beta</h2>
+
+<p>
+Plasma beta, β, is defined as the ratio of plasma pressure to magnetic
+pressure:
+</p>
+
+<div class="formula">
+β = p / p<sub>B</sub>
+</div>
+
+<p>
+Using the expression for magnetic pressure gives
+</p>
+
+<div class="formula">
+β = 2μ<sub>0</sub>p / B<sup>2</sup>
+</div>
+
+<p>
+The value of β provides an indication of how effectively the magnetic field is
+being used to confine plasma pressure.
+</p>
+
+<p>
+A low-beta plasma has
+</p>
+
+<div class="formula">
+β ≪ 1
+</div>
+
+<p>
+meaning that the magnetic pressure is much larger than the plasma pressure.
+</p>
+
+<p>
+A higher-beta plasma has a larger plasma pressure relative to the magnetic
+field.
+</p>
+
+<p>
+From the perspective of fusion energy, high beta is attractive because it
+means that a larger plasma pressure can be supported for a given magnetic
+field strength.
+</p>
+
+<p>
+However, increasing beta can also make the plasma more susceptible to certain
+instabilities. Therefore, beta is closely connected to both
+<strong>fusion performance</strong> and <strong>plasma stability</strong>.
+</p>
+
+
+<h2>5. Force Balance in Magnetized Plasma</h2>
+
+<p>
+The simplified equilibrium equation
+</p>
+
+<div class="formula">
+J × B = ∇p
+</div>
+
+<p>
+can be understood physically as a balance between two effects.
+</p>
+
+<p>
+The pressure gradient tends to push plasma from regions of high pressure
+toward regions of lower pressure.
+</p>
+
+<p>
+The electromagnetic force associated with the plasma current and magnetic
+field acts to confine and shape the plasma.
+</p>
+
+<p>
+A magnetically confined plasma therefore exists in a state of continuous
+force balance rather than being completely motionless.
+</p>
+
+<p>
+This distinction is important: <strong>equilibrium does not mean that
+individual particles are stationary</strong>. Particles continue to undergo
+gyromotion, drifts, collisions, and thermal motion even when the plasma is in
+macroscopic equilibrium.
+</p>
+
+
+<h2>6. Magnetic Flux Surfaces</h2>
+
+<p>
+In toroidal confinement devices, equilibrium is often described using
+<strong>magnetic flux surfaces</strong>.
+</p>
+
+<p>
+These are nested surfaces on which magnetic field lines remain approximately
+confined.
+</p>
+
+<p>
+The plasma pressure is commonly organized approximately as a function of
+magnetic flux:
+</p>
+
+<div class="formula">
+p = p(ψ)
+</div>
+
+<p>
+where ψ represents a magnetic flux coordinate.
+</p>
+
+<p>
+The central region of the plasma is associated with high pressure, while the
+pressure generally decreases toward the plasma edge.
+</p>
+
+<p>
+The magnetic surfaces therefore provide a geometric framework for describing
+the equilibrium structure of the confined plasma.
+</p>
+
+
+<h2>7. What Is Plasma Stability?</h2>
+
+<p>
+An equilibrium may exist without being stable.
+</p>
+
+<p>
+To understand stability, imagine slightly displacing a portion of the plasma
+from its equilibrium position.
+</p>
+
+<p>
+Three general outcomes are possible:
+</p>
+
+<ul>
+
+<li>
+<strong>Stable:</strong> the perturbation decreases or remains bounded.
+</li>
+
+<li>
+<strong>Marginally stable:</strong> the perturbation remains approximately
+constant.
+</li>
+
+<li>
+<strong>Unstable:</strong> the perturbation grows with time.
+</li>
+
+</ul>
+
+<p>
+A useful conceptual expression for an unstable perturbation is
+</p>
+
+<div class="formula">
+δ(t) ∝ e<sup>γt</sup>
+</div>
+
+<p>
+where γ is the growth rate.
+</p>
+
+<p>
+If
+</p>
+
+<div class="formula">
+γ > 0
+</div>
+
+<p>
+the perturbation grows and the equilibrium is unstable.
+</p>
+
+<p>
+If
+</p>
+
+<div class="formula">
+γ < 0
+</div>
+
+<p>
+the perturbation decays and the system tends to return toward equilibrium.
+</p>
+
+
+<h2>8. Sources of Plasma Instability</h2>
+
+<p>
+Plasma instabilities can arise from several physical mechanisms.
+</p>
+
+<p>
+Important sources include:
+</p>
+
+<ul>
+
+<li>
+pressure gradients,
+</li>
+
+<li>
+magnetic-field curvature,
+</li>
+
+<li>
+plasma current,
+</li>
+
+<li>
+velocity gradients,
+</li>
+
+<li>
+magnetic reconnection,
+</li>
+
+<li>
+interactions between plasma pressure and magnetic geometry.
+</li>
+
+</ul>
+
+<p>
+Because plasma is an electromagnetic medium, perturbations in density,
+pressure, current, and magnetic field are coupled together.
+</p>
+
+<p>
+This allows relatively small disturbances to develop into macroscopic
+instabilities.
+</p>
+
+
+<h2>9. Kink Instability</h2>
+
+<p>
+The <strong>kink instability</strong> is associated with distortions that bend
+or twist the plasma column.
+</p>
+
+<p>
+Instead of remaining centered and symmetric, the plasma can develop a
+helical displacement.
+</p>
+
+<p>
+In a current-carrying plasma, the plasma current itself contributes to the
+magnetic configuration. If the current and magnetic geometry are such that a
+perturbation can lower the system's magnetic energy, the perturbation may
+grow.
+</p>
+
+<p>
+Kink modes are particularly important in tokamak physics because tokamaks
+rely on a substantial plasma current.
+</p>
+
+<p>
+Controlling the current profile and magnetic-field geometry is therefore
+essential for maintaining stable operation.
+</p>
+
+
+<h2>10. Sausage Instability</h2>
+
+<p>
+The <strong>sausage instability</strong> changes the cross-sectional radius
+of a plasma column.
+</p>
+
+<p>
+Some regions become wider while others become narrower, producing a shape
+resembling a string of sausages.
+</p>
+
+<p>
+This is an example of an interchange-type deformation of the plasma
+configuration.
+</p>
+
+<p>
+The instability illustrates how magnetic pressure and plasma pressure can
+interact with the geometry of the plasma.
+</p>
+
+
+<h2>11. Ballooning Instability</h2>
+
+<p>
+The <strong>ballooning instability</strong> is strongly related to plasma
+pressure gradients and unfavorable magnetic curvature.
+</p>
+
+<p>
+A portion of the plasma can bulge outward, producing a deformation similar to
+an inflated balloon.
+</p>
+
+<p>
+Ballooning modes are particularly relevant in high-beta plasmas because
+increasing plasma pressure strengthens the pressure-gradient drive for
+instability.
+</p>
+
+<p>
+This creates an important connection between fusion performance and
+stability: increasing beta can improve the efficiency of magnetic confinement
+but may also make certain pressure-driven instabilities more likely.
+</p>
+
+
+<h2>12. Tearing Modes</h2>
+
+<p>
+A <strong>tearing mode</strong> is a type of instability associated with
+changes in magnetic topology and magnetic reconnection.
+</p>
+
+<p>
+In ideal magnetohydrodynamics, magnetic field lines are effectively frozen
+into the plasma.
+</p>
+
+<p>
+In regions where non-ideal effects become important, magnetic field lines can
+reconnect and change their topology.
+</p>
+
+<p>
+This process can produce structures known as
+<strong>magnetic islands</strong>.
+</p>
+
+<div class="formula">
+Magnetic reconnection → Magnetic islands → Modified transport
+</div>
+
+<p>
+Large magnetic islands can degrade confinement by providing pathways through
+which particles and energy can move across magnetic surfaces.
+</p>
+
+
+<h2>13. Magnetic Islands</h2>
+
+<p>
+In an ideal equilibrium, magnetic surfaces are nested and smooth.
+Perturbations can distort these surfaces and produce island structures.
+</p>
+
+<p>
+A magnetic island contains a set of magnetic field lines that form closed
+structures around an island center.
+</p>
+
+<p>
+Magnetic islands are important because they can modify the transport of
+particles and energy across the plasma.
+</p>
+
+<p>
+In tokamaks, magnetic islands are often associated with resonant
+magnetohydrodynamic modes and can become an important limitation on plasma
+confinement.
+</p>
+
+
+<h2>14. Stability and the Tokamak</h2>
+
+<p>
+Tokamaks must carefully control the plasma current, pressure profile, and
+magnetic-field configuration in order to maintain stable equilibrium.
+</p>
+
+<p>
+The safety factor introduced in the previous chapter,
+</p>
+
+<div class="formula">
+q(r) = rB<sub>φ</sub> / RB<sub>θ</sub>
+</div>
+
+<p>
+is particularly important because the magnetic-field-line winding is related
+to the appearance of resonant instabilities.
+</p>
+
+<p>
+The radial profile of q can therefore influence the stability of the plasma.
+</p>
+
+<p>
+Tokamak stability is also strongly affected by plasma beta, current density,
+pressure gradients, and magnetic shear.
+</p>
+
+
+<h2>15. Stability and the Stellarator</h2>
+
+<p>
+Stellarators approach plasma stability differently because their magnetic
+geometry is produced primarily by external three-dimensional coils rather
+than by a large plasma current.
+</p>
+
+<p>
+This reduces the dependence on current-driven confinement and eliminates the
+need for a large transformer-driven plasma current.
+</p>
+
+<p>
+However, three-dimensional magnetic geometry introduces its own challenges.
+The magnetic field must be carefully optimized to maintain good confinement,
+reduce particle losses, and control undesirable magnetic structures.
+</p>
+
+<p>
+Modern stellarators therefore rely heavily on sophisticated magnetic
+optimization and numerical calculations.
+</p>
+
+
+<h2>16. Ideal and Resistive Instabilities</h2>
+
+<p>
+Plasma instabilities can also be classified according to the physical
+processes required for their development.
+</p>
+
+<h3>Ideal MHD Instabilities</h3>
+
+<p>
+Ideal magnetohydrodynamic instabilities can develop under the assumption that
+the plasma has negligible electrical resistivity.
+</p>
+
+<p>
+Examples include kink and ballooning modes.
+</p>
+
+<p>
+These instabilities are primarily controlled by the balance between plasma
+pressure, current, and magnetic geometry.
+</p>
+
+
+<h3>Resistive Instabilities</h3>
+
+<p>
+Resistive instabilities require finite resistivity or other non-ideal
+effects.
+</p>
+
+<p>
+Tearing modes are a major example.
+</p>
+
+<p>
+Resistivity allows magnetic field lines to reconnect, changing the magnetic
+topology and potentially producing magnetic islands.
+</p>
+
+
+<h2>17. The Role of Magnetic Shear</h2>
+
+<p>
+Magnetic shear describes how the pitch of magnetic field lines changes from
+one magnetic surface to another.
+</p>
+
+<p>
+A plasma with strong magnetic shear can respond differently to perturbations
+than one with weak magnetic shear.
+</p>
+
+<p>
+Magnetic shear therefore plays an important role in determining whether
+certain instabilities can grow.
+</p>
+
+<p>
+In tokamaks, the shear is closely related to the radial variation of the
+safety factor q.
+</p>
+
+<div class="formula">
+Magnetic shear → variation of field-line winding → stability properties
+</div>
+
+
+<h2>18. Stability Is a Global Problem</h2>
+
+<p>
+One of the most important ideas in plasma physics is that stability cannot
+always be understood by considering a single particle.
+</p>
+
+<p>
+Single-particle motion describes gyromotion and guiding-center drifts.
+However, plasma stability is a collective phenomenon involving enormous
+numbers of interacting charged particles.
+</p>
+
+<div class="formula">
+Single-particle physics → Collective plasma behavior → MHD stability
+</div>
+
+<p>
+This represents a transition from microscopic plasma physics to macroscopic
+plasma dynamics.
+</p>
+
+<p>
+The behavior of the entire plasma can therefore be qualitatively different
+from the motion of any individual particle.
+</p>
+
+
+<h2>19. Why Stability Matters for Fusion</h2>
+
+<p>
+A fusion plasma must maintain high temperature and density for a sufficiently
+long time.
+</p>
+
+<p>
+If an instability grows rapidly, the plasma can lose its desired magnetic
+configuration and transport energy toward the plasma edge.
+</p>
+
+<p>
+In severe cases, the plasma can undergo a rapid loss of confinement.
+</p>
+
+<p>
+This is why plasma stability is one of the central problems in magnetic
+fusion research.
+</p>
+
+<p>
+The goal is not simply to create a strong magnetic field, but to construct a
+magnetic configuration in which a high-pressure plasma can remain both
+confined and stable.
+</p>
+
+
+<h2>20. Key Equations</h2>
+
+<p>
+The most important relations introduced in this chapter are:
+</p>
+
+<div class="formula">
+J × B = ∇p
+</div>
+
+<div class="formula">
+p = n<sub>e</sub>kT<sub>e</sub> + n<sub>i</sub>kT<sub>i</sub>
+</div>
+
+<div class="formula">
+p<sub>B</sub> = B<sup>2</sup> / 2μ<sub>0</sub>
+</div>
+
+<div class="formula">
+β = 2μ<sub>0</sub>p / B<sup>2</sup>
+</div>
+
+<div class="formula">
+δ(t) ∝ e<sup>γt</sup>
+</div>
+
+<div class="formula">
+q(r) = rB<sub>φ</sub> / RB<sub>θ</sub>
+</div>
+
+
+<h2>21. Key Takeaways</h2>
+
+<ul>
+
+<li>
+Plasma equilibrium requires a balance between plasma pressure and
+electromagnetic forces.
+</li>
+
+<li>
+A simplified MHD equilibrium condition is
+<strong>J × B = ∇p</strong>.
+</li>
+
+<li>
+Magnetic pressure is given by
+<strong>B² / 2μ<sub>0</sub></strong>.
+</li>
+
+<li>
+Plasma beta measures the ratio of plasma pressure to magnetic pressure.
+</li>
+
+<li>
+High beta is attractive for fusion because it allows greater plasma pressure
+for a given magnetic field.
+</li>
+
+<li>
+However, increasing plasma pressure can also increase susceptibility to
+pressure-driven instabilities.
+</li>
+
+<li>
+A plasma equilibrium can be stable, marginally stable, or unstable.
+</li>
+
+<li>
+Kink, sausage, ballooning, and tearing modes are important examples of plasma
+instabilities.
+</li>
+
+<li>
+Tearing modes can produce magnetic islands through magnetic reconnection.
+</li>
+
+<li>
+Tokamak stability is strongly connected to plasma current, magnetic geometry,
+pressure gradients, and the safety-factor profile.
+</li>
+
+<li>
+Stellarators reduce dependence on plasma current but require carefully
+optimized three-dimensional magnetic fields.
+</li>
+
+<li>
+Plasma stability is a collective phenomenon and cannot be understood solely
+from single-particle motion.
+</li>
+
+</ul>
+
+
+<h2>Connection to the Next Topic</h2>
+
+<p>
+Magnetic confinement, equilibrium, and stability describe how a plasma can
+remain contained inside a controlled magnetic configuration.
+</p>
+
+<p>
+The next step is to examine the physical conditions required for fusion itself:
+how nuclei interact at extremely high energies and why sufficiently hot and
+dense plasmas are necessary for a sustained fusion reaction.
+</p>
+
+<div class="formula">
+Next topic: Fusion Plasma
+</div>
+
+
+<a href="index.html" class="back-button">
+← Back to Home
+</a>
+
+
+</div>
+
+
+</body>
+
+</html>
