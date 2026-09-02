@@ -126,6 +126,8 @@ h3{
 }
 
 
+/* PARAGRAPHS */
+
 p{
 
     margin-bottom:15px;
@@ -186,6 +188,7 @@ img{
 
 
 /* WELCOME BLOCK */
+/* Used only for special welcome/hero sections */
 
 .hero{
 
