@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Magnetic Confinement: Tokamaks and Stellarators</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="content">
+
+<a href="index.html" class="back-button">
+← Back to Home
+</a>
+
+
+<h1>Magnetic Confinement: Tokamaks and Stellarators</h1>
+
+
+<h2>Introduction</h2>
+
+<p>
+One of the central challenges of fusion research is the confinement of an
+extremely hot plasma for a sufficiently long time. At fusion temperatures,
+matter cannot be placed in direct contact with ordinary material walls.
+Instead, magnetic fields are used to control the motion of charged particles
+and keep the plasma away from the surrounding structure.
+</p>
+
+<p>
+The previous chapters introduced the motion of individual charged particles
+in magnetic fields and the guiding-center drifts that appear when magnetic
+fields are curved or non-uniform.
+</p>
+
+<p>
+These effects become particularly important in toroidal magnetic confinement.
+In devices such as <strong>tokamaks</strong> and
+<strong>stellarators</strong>, carefully designed magnetic fields force
+charged particles to follow complex trajectories around a toroidal plasma.
+</p>
+
+<p>
+Tokamaks and stellarators therefore represent two different solutions to the
+same fundamental problem:
+</p>
+
+<div class="formula">
+How can a hot plasma be confined inside a closed magnetic system?
+</div>
+
+
+<h2>1. Why Magnetic Confinement?</h2>
+
+<p>
+Charged particles experience the Lorentz force
+</p>
+
+<div class="formula">
+F = q(E + v × B)
+</div>
+
+<p>
+and therefore gyrate around magnetic field lines. The characteristic radius
+of this motion is the Larmor radius
+</p>
+
+<div class="formula">
+r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+</div>
+
+<p>
+When the Larmor radius is much smaller than the dimensions of the plasma,
+particles are strongly magnetized and tend to remain close to magnetic field
+lines.
+</p>
+
+<div class="formula">
+r<sub>L</sub> ≪ L
+</div>
+
+<p>
+This suggests a basic strategy for plasma confinement: construct magnetic
+field lines that remain inside a closed region so that charged particles can
+circulate without immediately reaching a material surface.
+</p>
+
+<p>
+The simplest idea would be to use a long cylindrical plasma surrounded by
+magnetic coils. However, particles moving parallel to the magnetic field
+would eventually escape through the ends of the cylinder.
+</p>
+
+<p>
+A natural solution is therefore to bend the cylinder into a closed ring,
+producing a <strong>torus</strong>.
+</p>
+
+
+<h2>2. Toroidal Magnetic Confinement</h2>
+
+<p>
+A torus has two important directions.
+</p>
+
+<ul>
+
+<li>
+<strong>Toroidal direction:</strong> the long direction around the main axis
+of the torus.
+</li>
+
+<li>
+<strong>Poloidal direction:</strong> the short direction around the
+cross-section of the plasma.
+</li>
+
+</ul>
+
+<p>
+A magnetic field pointing mainly around the long direction of the torus is
+called the <strong>toroidal magnetic field</strong>.
+</p>
+
+<p>
+At first sight, a purely toroidal magnetic field appears to solve the
+end-loss problem because the field lines form closed loops.
+</p>
+
+<p>
+However, toroidal geometry introduces an important complication.
+</p>
+
+<p>
+The magnetic field is not equally strong everywhere. It is stronger on the
+inner side of the torus and weaker on the outer side.
+Approximately,
+</p>
+
+<div class="formula">
+B<sub>φ</sub> ∝ 1 / R
+</div>
+
+<p>
+where R is the distance from the major axis of the torus.
+</p>
+
+<p>
+This magnetic-field gradient, together with the curvature of the magnetic
+field lines, produces the gradient-B and curvature drifts discussed in the
+previous chapter.
+</p>
+
+<p>
+Electrons and ions drift in opposite directions because these magnetic drift
+velocities depend on the sign of the particle charge.
+</p>
+
+<p>
+As a result, a simple toroidal magnetic field cannot provide sufficient
+confinement by itself.
+</p>
+
+
+<h2>3. The Need for Twisted Magnetic Field Lines</h2>
+
+<p>
+The solution is to make magnetic field lines follow a
+<strong>helical</strong> path rather than a purely toroidal one.
+</p>
+
+<p>
+Instead of remaining permanently on the inner or outer side of the torus,
+a particle following a helical field line moves around both the toroidal and
+poloidal directions.
+</p>
+
+<p>
+This allows the particle to sample different regions of the magnetic field
+and helps compensate for systematic drift effects.
+</p>
+
+<p>
+The total magnetic field can therefore be understood as a combination of
+toroidal and poloidal components:
+</p>
+
+<div class="formula">
+B = B<sub>φ</sub> + B<sub>θ</sub>
+</div>
+
+<p>
+where
+</p>
+
+<ul>
+
+<li>B<sub>φ</sub> is the toroidal magnetic field,</li>
+
+<li>B<sub>θ</sub> is the poloidal magnetic field.</li>
+
+</ul>
+
+<p>
+Tokamaks and stellarators both create twisted magnetic field lines, but they
+generate this magnetic geometry in fundamentally different ways.
+</p>
+
+
+<h2>4. The Tokamak</h2>
+
+<p>
+The <strong>tokamak</strong> is one of the most extensively studied magnetic
+confinement configurations for fusion plasmas.
+</p>
+
+<p>
+Its magnetic geometry is approximately axisymmetric, meaning that the system
+looks essentially the same when rotated around its central axis.
+</p>
+
+<p>
+A tokamak produces its helical magnetic field by combining two main magnetic
+components.
+</p>
+
+
+<h3>4.1 Toroidal Magnetic Field</h3>
+
+<p>
+The toroidal magnetic field is generated by external magnetic coils arranged
+around the torus.
+</p>
+
+<p>
+These coils create a strong field in the toroidal direction:
+</p>
+
+<div class="formula">
+B<sub>φ</sub>
+</div>
+
+<p>
+This field is typically the dominant magnetic-field component in a tokamak.
+</p>
+
+
+<h3>4.2 Poloidal Magnetic Field</h3>
+
+<p>
+The second component is the poloidal magnetic field.
+</p>
+
+<p>
+In a tokamak, an important part of the poloidal magnetic field is generated
+by an electric current flowing through the plasma itself.
+</p>
+
+<div class="formula">
+I<sub>p</sub> = plasma current
+</div>
+
+<p>
+This current produces a magnetic field encircling the plasma cross-section:
+</p>
+
+<div class="formula">
+I<sub>p</sub> → B<sub>θ</sub>
+</div>
+
+<p>
+The combination of the strong toroidal field and the weaker poloidal field
+produces helical magnetic field lines.
+</p>
+
+<div class="formula">
+B<sub>φ</sub> + B<sub>θ</sub> → helical magnetic field
+</div>
+
+
+<h2>5. Magnetic Surfaces</h2>
+
+<p>
+The magnetic field lines in an ideal tokamak are organized into nested
+toroidal surfaces called <strong>magnetic flux surfaces</strong>.
+</p>
+
+<p>
+A field line winds around the torus while remaining approximately on one of
+these surfaces.
+</p>
+
+<p>
+Because charged particles tend to follow magnetic field lines, magnetic
+surfaces provide the basic structure of plasma confinement.
+</p>
+
+<p>
+The innermost magnetic surface surrounds the magnetic axis, while the outer
+surfaces extend toward the plasma edge.
+</p>
+
+<p>
+Ideally, particles and thermal energy remain confined to these magnetic
+surfaces for a sufficiently long time.
+</p>
+
+
+<h2>6. The Safety Factor</h2>
+
+<p>
+An important quantity used to describe magnetic-field-line geometry in a
+tokamak is the <strong>safety factor</strong>, usually denoted by q.
+</p>
+
+<p>
+In a simplified circular tokamak, it can be written approximately as
+</p>
+
+<div class="formula">
+q(r) = rB<sub>φ</sub> / RB<sub>θ</sub>
+</div>
+
+<p>
+where
+</p>
+
+<ul>
+
+<li>r is the minor radial coordinate,</li>
+
+<li>R is the major radius of the torus,</li>
+
+<li>B<sub>φ</sub> is the toroidal magnetic field,</li>
+
+<li>B<sub>θ</sub> is the poloidal magnetic field.</li>
+
+</ul>
+
+<p>
+Physically, the safety factor describes how magnetic field lines wind around
+the torus.
+</p>
+
+<p>
+It is closely related to the number of toroidal turns made by a field line
+for each poloidal turn.
+</p>
+
+<p>
+The radial profile q(r) plays an important role in plasma equilibrium and
+stability. Certain values of q can be associated with resonant magnetic
+surfaces and magnetohydrodynamic instabilities.
+</p>
+
+<p>
+A detailed discussion of these instabilities belongs to plasma
+<strong>equilibrium and stability</strong>, which naturally follows the
+present chapter.
+</p>
+
+
+<h2>7. Plasma Current in a Tokamak</h2>
+
+<p>
+The plasma current is one of the defining features of a tokamak.
+</p>
+
+<p>
+Traditionally, it is induced using transformer action. The plasma behaves
+approximately like the secondary winding of a transformer, while a central
+solenoid changes the magnetic flux through the torus.
+</p>
+
+<p>
+According to Faraday's law,
+</p>
+
+<div class="formula">
+∮ E · dl = − dΦ<sub>B</sub> / dt
+</div>
+
+<p>
+the changing magnetic flux produces an electric field around the torus,
+driving a toroidal plasma current.
+</p>
+
+<p>
+This current has two important consequences:
+</p>
+
+<ul>
+
+<li>it produces part of the poloidal magnetic field,</li>
+
+<li>it also contributes to ohmic heating of the plasma.</li>
+
+</ul>
+
+<p>
+However, transformer-driven current cannot naturally remain constant
+forever. This makes continuous steady-state operation more difficult for
+tokamaks and motivates the development of non-inductive current-drive
+techniques.
+</p>
+
+
+<h2>8. Advantages and Challenges of Tokamaks</h2>
+
+<p>
+Tokamaks have several important advantages.
+</p>
+
+<ul>
+
+<li>
+Their axisymmetric geometry is relatively simple compared with fully
+three-dimensional magnetic configurations.
+</li>
+
+<li>
+They have demonstrated excellent plasma confinement.
+</li>
+
+<li>
+A very large experimental and theoretical knowledge base has been developed
+around tokamak physics.
+</li>
+
+</ul>
+
+<p>
+However, tokamaks also face significant challenges.
+</p>
+
+<ul>
+
+<li>
+A large plasma current must be generated and controlled.
+</li>
+
+<li>
+The plasma current can drive magnetohydrodynamic instabilities.
+</li>
+
+<li>
+Sudden losses of plasma confinement, known as
+<strong>disruptions</strong>, can occur.
+</li>
+
+<li>
+Maintaining continuous steady-state operation is difficult.
+</li>
+
+<li>
+Particles and energy can still escape through turbulent and collisional
+transport.
+</li>
+
+</ul>
+
+
+<h2>9. The Stellarator</h2>
+
+<p>
+The <strong>stellarator</strong> provides a different approach to toroidal
+magnetic confinement.
+</p>
+
+<p>
+Like a tokamak, a stellarator confines plasma using twisted magnetic field
+lines organized around a toroidal geometry.
+</p>
+
+<p>
+The crucial difference is how this twist is produced.
+</p>
+
+<p>
+Instead of relying primarily on a large toroidal plasma current to generate
+the poloidal magnetic field, a stellarator creates most of its required
+magnetic geometry using <strong>external three-dimensional coils</strong>.
+</p>
+
+<p>
+The coils themselves are carefully shaped so that the magnetic field lines
+wind helically around the torus.
+</p>
+
+
+<h2>10. Three-Dimensional Magnetic Geometry</h2>
+
+<p>
+Unlike the approximately axisymmetric tokamak, a stellarator generally has
+a fully three-dimensional magnetic configuration.
+</p>
+
+<p>
+The magnetic coils may have complex non-planar shapes. Their geometry is
+designed so that the resulting field forms nested magnetic surfaces capable
+of confining the plasma.
+</p>
+
+<p>
+This makes stellarators more complicated to design and manufacture.
+However, it also provides considerable freedom to optimize the magnetic
+configuration.
+</p>
+
+<p>
+Modern stellarator design relies heavily on numerical optimization to reduce
+particle losses, improve magnetic surfaces, and control plasma transport.
+</p>
+
+
+<h2>11. Rotational Transform</h2>
+
+<p>
+The twisting of magnetic field lines in a stellarator is often described
+using the <strong>rotational transform</strong>, denoted by ι.
+</p>
+
+<p>
+Conceptually, the rotational transform describes how much a magnetic field
+line advances in the poloidal direction as it travels around the torus.
+</p>
+
+<p>
+The rotational transform is closely related to the tokamak safety factor.
+Using a common convention,
+</p>
+
+<div class="formula">
+ι = 1 / q
+</div>
+
+<p>
+although exact definitions and normalization conventions can vary.
+</p>
+
+<p>
+In a tokamak, much of this rotational transform is associated with the plasma
+current. In a stellarator, it can be produced largely by the external magnetic
+coils.
+</p>
+
+
+<h2>12. Why Stellarators Are Interesting</h2>
+
+<p>
+One of the major advantages of the stellarator concept is that it does not
+require a large net toroidal plasma current for its basic magnetic
+configuration.
+</p>
+
+<p>
+This gives stellarators several attractive properties.
+</p>
+
+<ul>
+
+<li>
+They are naturally suited to steady-state operation.
+</li>
+
+<li>
+They are less dependent on transformer-driven plasma current.
+</li>
+
+<li>
+The risk of large current-driven disruptions can be reduced.
+</li>
+
+<li>
+Their magnetic geometry can be optimized using external coils.
+</li>
+
+</ul>
+
+<p>
+However, stellarators also present major challenges.
+</p>
+
+<ul>
+
+<li>
+Their magnetic geometry is fully three-dimensional.
+</li>
+
+<li>
+The coils can be extremely complex to manufacture and assemble.
+</li>
+
+<li>
+Small construction errors can affect the magnetic surfaces.
+</li>
+
+<li>
+Particle transport in three-dimensional fields requires careful optimization.
+</li>
+
+</ul>
+
+
+<h2>13. Tokamak vs Stellarator</h2>
+
+<p>
+Tokamaks and stellarators use the same basic physical principle: charged
+particles are confined by strong, twisted magnetic fields.
+</p>
+
+<p>
+Their main difference lies in the origin of the magnetic-field twist.
+</p>
+
+<table style="width:100%; border-collapse:collapse; margin:25px 0;">
+
+<tr>
+
+<th style="border:1px solid #ccc; padding:10px;">
+Property
+</th>
+
+<th style="border:1px solid #ccc; padding:10px;">
+Tokamak
+</th>
+
+<th style="border:1px solid #ccc; padding:10px;">
+Stellarator
+</th>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Geometry
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Approximately axisymmetric
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Fully three-dimensional
+</td>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Toroidal magnetic field
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+External coils
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+External coils
+</td>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Magnetic-field twist
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Strongly associated with plasma current
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Primarily produced by shaped external coils
+</td>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Large plasma current
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Required
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Not required for the basic configuration
+</td>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Steady-state operation
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+More difficult
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Natural advantage
+</td>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Disruptions
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Important concern
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Generally less severe concern
+</td>
+
+</tr>
+
+
+<tr>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Coil design
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Relatively simpler
+</td>
+
+<td style="border:1px solid #ccc; padding:10px;">
+Much more geometrically complex
+</td>
+
+</tr>
+
+</table>
+
+
+<h2>14. Magnetic Islands</h2>
+
+<p>
+In an ideal confinement system, magnetic surfaces are smooth and nested.
+Real magnetic fields, however, can contain perturbations.
+</p>
+
+<p>
+Near certain resonant surfaces, these perturbations can modify the magnetic
+topology and create structures known as
+<strong>magnetic islands</strong>.
+</p>
+
+<p>
+Inside a magnetic island, field lines form a different pattern from the
+surrounding nested flux surfaces.
+</p>
+
+<p>
+Large magnetic islands can increase radial transport and degrade plasma
+confinement.
+</p>
+
+<p>
+If several magnetic islands overlap strongly, the magnetic field can become
+partially stochastic, allowing particles and energy to move more easily
+across the plasma.
+</p>
+
+<p>
+Magnetic islands are important in both tokamak and stellarator physics and
+provide another connection between magnetic geometry, plasma transport, and
+plasma stability.
+</p>
+
+
+<h2>15. From Single-Particle Motion to Fusion Devices</h2>
+
+<p>
+Tokamaks and stellarators demonstrate how the microscopic physics discussed
+in the previous chapters becomes part of a macroscopic confinement system.
+</p>
+
+<p>
+A charged particle first undergoes gyromotion around a magnetic field line.
+Its guiding center then experiences gradient-B, curvature, and electric-field
+drifts.
+</p>
+
+<p>
+In a toroidal device, the magnetic configuration must be designed so that
+these motions do not lead to rapid particle loss.
+</p>
+
+<div class="formula">
+Gyromotion → Drifts → Magnetic Surfaces → Plasma Confinement
+</div>
+
+<p>
+The geometry of the magnetic field therefore determines how well individual
+particle trajectories combine to produce confinement of the plasma as a
+whole.
+</p>
+
+
+<h2>16. Key Equations</h2>
+
+<p>
+The most important relations introduced in this chapter are summarized below.
+</p>
+
+<div class="formula">
+F = q(E + v × B)
+</div>
+
+<div class="formula">
+r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+</div>
+
+<div class="formula">
+B<sub>φ</sub> ∝ 1 / R
+</div>
+
+<div class="formula">
+B = B<sub>φ</sub> + B<sub>θ</sub>
+</div>
+
+<div class="formula">
+q(r) = rB<sub>φ</sub> / RB<sub>θ</sub>
+</div>
+
+<div class="formula">
+ι = 1 / q
+</div>
+
+<div class="formula">
+∮ E · dl = − dΦ<sub>B</sub> / dt
+</div>
+
+
+<h2>17. Summary</h2>
+
+<ul>
+
+<li>
+Magnetic confinement uses the gyromotion of charged particles to restrict
+their motion across magnetic field lines.
+</li>
+
+<li>
+Closing a magnetic system into a torus removes the simple end losses of a
+linear magnetic device.
+</li>
+
+<li>
+A purely toroidal magnetic field is insufficient because field curvature and
+magnetic-field gradients generate particle drifts.
+</li>
+
+<li>
+Successful toroidal confinement therefore requires twisted magnetic field
+lines.
+</li>
+
+<li>
+A tokamak combines an externally generated toroidal magnetic field with a
+poloidal field strongly associated with the plasma current.
+</li>
+
+<li>
+The combination of toroidal and poloidal magnetic fields creates helical
+field lines and nested magnetic surfaces.
+</li>
+
+<li>
+The tokamak safety factor q describes the winding of magnetic field lines.
+</li>
+
+<li>
+A stellarator creates the required three-dimensional magnetic geometry
+primarily using external coils.
+</li>
+
+<li>
+Stellarators do not require a large net plasma current for their fundamental
+confinement configuration and are therefore naturally attractive for
+steady-state operation.
+</li>
+
+<li>
+Tokamaks have simpler geometry but must control plasma current and
+current-driven instabilities.
+</li>
+
+<li>
+Stellarators avoid some of these problems at the cost of much more complex
+magnetic geometry and coil design.
+</li>
+
+</ul>
+
+
+<h2>Connection to the Next Topic</h2>
+
+<p>
+Constructing closed magnetic surfaces is only one part of the confinement
+problem.
+</p>
+
+<p>
+A magnetically confined plasma contains pressure gradients, electric
+currents, magnetic-field curvature, and enormous amounts of thermal energy.
+These effects can disturb the equilibrium and generate instabilities.
+</p>
+
+<p>
+The next step is therefore to understand how a plasma reaches force balance
+and under what conditions that equilibrium remains stable.
+</p>
+
+<div class="formula">
+Next topic: Plasma Equilibrium and Stability
+</div>
+
+
+<a href="index.html" class="back-button">
+← Back to Home
+</a>
+
+
+</div>
+
+
+</body>
+
+</html>
