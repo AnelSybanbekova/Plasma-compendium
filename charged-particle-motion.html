@@ -13,6 +13,18 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- MathJax for mathematical formulas -->
+<script>
+MathJax = {
+    tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+    }
+};
+</script>
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 
@@ -72,14 +84,16 @@ the Lorentz force:
 
 <p class="formula">
 
-F⃗ = q(E⃗ + v⃗ × B⃗)
+\[
+\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})
+\]
 
 </p>
 
 <p>
 
-where q is the particle charge, E⃗ is the electric field, v⃗ is the particle
-velocity, and B⃗ is the magnetic field.
+where \(q\) is the particle charge, \(\vec{E}\) is the electric field,
+\(\vec{v}\) is the particle velocity, and \(\vec{B}\) is the magnetic field.
 
 </p>
 
@@ -91,7 +105,9 @@ The Lorentz force consists of two contributions. The electric force is
 
 <p class="formula">
 
-F⃗<sub>E</sub> = qE⃗
+\[
+\vec{F}_{E} = q\vec{E}
+\]
 
 </p>
 
@@ -103,7 +119,9 @@ while the magnetic force is
 
 <p class="formula">
 
-F⃗<sub>B</sub> = q(v⃗ × B⃗)
+\[
+\vec{F}_{B} = q(\vec{v} \times \vec{B})
+\]
 
 </p>
 
@@ -123,7 +141,9 @@ Therefore,
 
 <p class="formula">
 
-F⃗<sub>B</sub> · v⃗ = 0
+\[
+\vec{F}_{B} \cdot \vec{v} = 0
+\]
 
 </p>
 
@@ -147,7 +167,9 @@ field, with no electric field:
 
 <p class="formula">
 
-E⃗ = 0, &nbsp;&nbsp; B⃗ = constant
+\[
+\vec{E} = 0, \qquad \vec{B} = \text{constant}
+\]
 
 </p>
 
@@ -159,7 +181,9 @@ The equation of motion becomes
 
 <p class="formula">
 
-m dv⃗/dt = q(v⃗ × B⃗)
+\[
+m\frac{d\vec{v}}{dt} = q(\vec{v} \times \vec{B})
+\]
 
 </p>
 
@@ -172,20 +196,24 @@ parallel to the magnetic field and one perpendicular to it.
 
 <p class="formula">
 
-v⃗ = v⃗<sub>∥</sub> + v⃗<sub>⊥</sub>
+\[
+\vec{v} = \vec{v}_{\parallel} + \vec{v}_{\perp}
+\]
 
 </p>
 
 <p>
 
 The parallel component is unaffected by the magnetic force because it is
-parallel to B⃗:
+parallel to \(\vec{B}\):
 
 </p>
 
 <p class="formula">
 
-v⃗<sub>∥</sub> × B⃗ = 0
+\[
+\vec{v}_{\parallel} \times \vec{B} = 0
+\]
 
 </p>
 
@@ -217,7 +245,9 @@ perpendicular to the magnetic field:
 
 <p class="formula">
 
-v⃗ = v⃗<sub>⊥</sub>
+\[
+\vec{v} = \vec{v}_{\perp}
+\]
 
 </p>
 
@@ -230,7 +260,9 @@ motion:
 
 <p class="formula">
 
-|q|v<sub>⊥</sub>B = mv<sub>⊥</sub><sup>2</sup>/r<sub>L</sub>
+\[
+|q|v_{\perp}B = \frac{mv_{\perp}^{2}}{r_{L}}
+\]
 
 </p>
 
@@ -242,7 +274,9 @@ Solving for the orbit radius gives
 
 <p class="formula">
 
-r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+\[
+r_{L} = \frac{mv_{\perp}}{|q|B}
+\]
 
 </p>
 
@@ -262,7 +296,9 @@ The angular frequency of the circular motion is
 
 <p class="formula">
 
-ω<sub>c</sub> = v<sub>⊥</sub> / r<sub>L</sub>
+\[
+\omega_{c} = \frac{v_{\perp}}{r_{L}}
+\]
 
 </p>
 
@@ -275,7 +311,9 @@ Substituting the expression for the Larmor radius gives the
 
 <p class="formula">
 
-ω<sub>c</sub> = |q|B / m
+\[
+\omega_{c} = \frac{|q|B}{m}
+\]
 
 </p>
 
@@ -287,7 +325,9 @@ The corresponding cyclotron frequency in hertz is
 
 <p class="formula">
 
-f<sub>c</sub> = |q|B / 2πm
+\[
+f_{c} = \frac{|q|B}{2\pi m}
+\]
 
 </p>
 
@@ -311,7 +351,9 @@ magnetized plasma physics:
 
 <p class="formula">
 
-r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+\[
+r_{L} = \frac{mv_{\perp}}{|q|B}
+\]
 
 </p>
 
@@ -332,13 +374,15 @@ characteristic spatial scale of the system:
 
 <p class="formula">
 
-r<sub>L</sub> ≪ L
+\[
+r_{L} \ll L
+\]
 
 </p>
 
 <p>
 
-where L is a characteristic length scale of the magnetic field or plasma.
+where \(L\) is a characteristic length scale of the magnetic field or plasma.
 
 </p>
 
@@ -363,7 +407,9 @@ velocity components:
 
 <p class="formula">
 
-v⃗ = v⃗<sub>∥</sub> + v⃗<sub>⊥</sub>
+\[
+\vec{v} = \vec{v}_{\parallel} + \vec{v}_{\perp}
+\]
 
 </p>
 
@@ -383,7 +429,9 @@ The resulting trajectory is therefore a helix.
 
 <p class="formula">
 
-Helical motion = gyromotion + parallel motion
+\[
+\text{Helical motion} = \text{gyromotion} + \text{parallel motion}
+\]
 
 </p>
 
@@ -396,13 +444,17 @@ magnetic field during one complete gyroperiod:
 
 <p class="formula">
 
-T<sub>c</sub> = 2π / ω<sub>c</sub>
+\[
+T_{c} = \frac{2\pi}{\omega_{c}}
+\]
 
 </p>
 
 <p class="formula">
 
-p = v<sub>∥</sub>T<sub>c</sub>
+\[
+p = v_{\parallel}T_{c}
+\]
 
 </p>
 
@@ -414,14 +466,16 @@ or, equivalently,
 
 <p class="formula">
 
-p = 2πv<sub>∥</sub> / ω<sub>c</sub>
+\[
+p = \frac{2\pi v_{\parallel}}{\omega_{c}}
+\]
 
 </p>
 
 <p>
 
-If v<sub>∥</sub> = 0, the trajectory becomes a circle. If
-v<sub>⊥</sub> = 0, the particle moves along the magnetic field line without
+If \(v_{\parallel} = 0\), the trajectory becomes a circle. If
+\(v_{\perp} = 0\), the particle moves along the magnetic field line without
 gyration.
 
 </p>
@@ -518,7 +572,9 @@ field, another useful quantity is the magnetic moment:
 
 <p class="formula">
 
-μ = mv<sub>⊥</sub><sup>2</sup> / 2B
+\[
+\mu = \frac{mv_{\perp}^{2}}{2B}
+\]
 
 </p>
 
@@ -572,7 +628,9 @@ This phenomenon is known as the <strong>magnetic mirror effect</strong>.
 
 <p class="formula">
 
-μ = mv<sub>⊥</sub><sup>2</sup> / 2B ≈ constant
+\[
+\mu = \frac{mv_{\perp}^{2}}{2B} \approx \text{constant}
+\]
 
 </p>
 
@@ -637,49 +695,65 @@ The most important equations from this chapter are summarized below.
 
 <p class="formula">
 
-F⃗ = q(E⃗ + v⃗ × B⃗)
+\[
+\vec{F} = q(\vec{E} + \vec{v} \times \vec{B})
+\]
 
 </p>
 
 <p class="formula">
 
-r<sub>L</sub> = mv<sub>⊥</sub> / |q|B
+\[
+r_{L} = \frac{mv_{\perp}}{|q|B}
+\]
 
 </p>
 
 <p class="formula">
 
-ω<sub>c</sub> = |q|B / m
+\[
+\omega_{c} = \frac{|q|B}{m}
+\]
 
 </p>
 
 <p class="formula">
 
-f<sub>c</sub> = |q|B / 2πm
+\[
+f_{c} = \frac{|q|B}{2\pi m}
+\]
 
 </p>
 
 <p class="formula">
 
-T<sub>c</sub> = 2π / ω<sub>c</sub>
+\[
+T_{c} = \frac{2\pi}{\omega_{c}}
+\]
 
 </p>
 
 <p class="formula">
 
-p = 2πv<sub>∥</sub> / ω<sub>c</sub>
+\[
+p = \frac{2\pi v_{\parallel}}{\omega_{c}}
+\]
 
 </p>
 
 <p class="formula">
 
-μ = mv<sub>⊥</sub><sup>2</sup> / 2B
+\[
+\mu = \frac{mv_{\perp}^{2}}{2B}
+\]
 
 </p>
 
 <p class="formula">
 
-r<sub>L</sub> ≪ L
+\[
+r_{L} \ll L
+\]
 
 </p>
 
