@@ -14,24 +14,32 @@ body{
 }
 
 
-
 /* MENU */
 
 .sidebar{
 
     width:260px;
     height:100vh;
+
     position:fixed;
     top:0;
     left:0;
+
     background:#1e3a5f;
+
     padding:30px 20px;
 
     /* Allows the menu to scroll */
     overflow-y:auto;
+    overflow-x:hidden;
+
+    /* Makes sure the entire menu can be reached */
+    scrollbar-width:auto;
 
 }
 
+
+/* Sidebar title */
 
 .sidebar h1{
 
@@ -42,11 +50,15 @@ body{
 }
 
 
+/* Sidebar links */
+
 .sidebar a{
 
     display:block;
+
     color:#dbe7f5;
     text-decoration:none;
+
     padding:10px 0;
 
 }
@@ -59,20 +71,23 @@ body{
 }
 
 
-
 /* CONTENT */
 
 .content{
 
     max-width:900px;
+
     margin:40px auto;
+
     background:white;
+
     padding:40px;
+
     border-radius:12px;
+
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
 
 }
-
 
 
 /* HOME PAGE */
@@ -81,10 +96,10 @@ body:has(.sidebar) .content{
 
     margin-left:300px;
     margin-right:40px;
+
     max-width:none;
 
 }
-
 
 
 /* HEADINGS */
@@ -118,17 +133,17 @@ p{
 }
 
 
-
 /* FORMULAS */
 
 .formula{
 
     text-align:center;
+
     font-size:22px;
+
     margin:20px;
 
 }
-
 
 
 /* IMAGES */
@@ -136,8 +151,11 @@ p{
 img{
 
     display:block;
+
     max-width:600px;
+
     width:100%;
+
     margin:25px auto;
 
 }
@@ -146,8 +164,11 @@ img{
 .plasma-image{
 
     display:block;
+
     max-width:80%;
+
     height:auto;
+
     margin:30px auto;
 
 }
@@ -156,11 +177,12 @@ img{
 .figure-caption{
 
     text-align:center;
+
     font-style:italic;
+
     margin-bottom:40px;
 
 }
-
 
 
 /* WELCOME BLOCK */
@@ -168,8 +190,11 @@ img{
 .hero{
 
     background:linear-gradient(135deg,#1e3a5f,#4f8cff);
+
     color:white;
+
     padding:40px;
+
     border-radius:12px;
 
 }
@@ -182,14 +207,16 @@ img{
 }
 
 
-
 /* BACK / NAVIGATION BUTTONS */
 
 .back-button{
 
     display:inline-block;
+
     margin-bottom:20px;
+
     color:#24527a;
+
     text-decoration:none;
 
 }
@@ -202,7 +229,6 @@ img{
 }
 
 
-
 /* MOBILE */
 
 @media (max-width:700px){
@@ -210,10 +236,14 @@ img{
     .sidebar{
 
         width:100%;
+
         height:auto;
+
         position:relative;
+
         top:auto;
         left:auto;
+
         padding:20px;
 
         /* No fixed scrolling menu on mobile */
@@ -240,8 +270,11 @@ img{
     body:has(.sidebar) .content{
 
         width:100%;
+
         max-width:100%;
+
         margin:0;
+
         padding:20px;
 
     }
@@ -271,6 +304,7 @@ img{
     p{
 
         font-size:16px;
+
         line-height:1.6;
 
     }
